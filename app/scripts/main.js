@@ -3,8 +3,6 @@ var count = $('#drink'),
 var glass;
 
 
-
-
 whiskey.results.forEach( function (item) {
 
 title = "<p class='t'>" + item.title + "</p>";
@@ -17,13 +15,20 @@ shop_name = "<p class='sn'>" + item.Shop.shop_name + "</p>";
 
 image = "<img src='" + item.Images[0].url_170x135 + "' />";
 
-box = "<img class='box1' src='" + 'https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/hamburger.png' + "' />";
+box = "<img class='box' src='" + 'https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/hamburger.png' + "' />"+"<img class='box2' src='" + 'https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/heart.png' + "' />";
 
+// box2= "<img class='box2' src='" + 'https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/heart.png' + "' />";
 
-glass="<li>" + image + title + shop_name +  currency_code + price +box +"</li>";
+glass="<li>" + box + image + title + shop_name +  currency_code + price +"</li>";
 
 
 count.append(glass);
 
 
 });
+
+ $('li').hover(
+   function(){
+     $(this).toggleClass('showButtons');
+   }
+);

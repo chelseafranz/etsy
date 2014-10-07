@@ -40,7 +40,7 @@ img{
   display: block;
   border-radius: 1px;
 
-  z-index: 1;
+
 }
 }
 
@@ -106,12 +106,32 @@ img:hover{
   margin-top: 132px;
   margin-right: 0px;
 }
+    .box{
+      height:25px;
+      width:25px;
+      top:5px;
+      right:10px;
+      position:absolute;
+      background-color:gray;
+      display:none;
+      border-radius:5px;
 
-.box1{
-  /* display: none; */
-  height: 25px;
-  width: 25px;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
+    }
+
+    .box2{
+      height:25px;
+      width:25px;
+      top:5px;
+      right:40px;
+      position:absolute;
+      background-color:gray;
+      display:none;
+      border-radius:5px;
+
+    }
+
+
+
+&.showButtons .box, &.showButtons .box2 {
+    display: block;
+  }
