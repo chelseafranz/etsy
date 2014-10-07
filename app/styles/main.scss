@@ -12,6 +12,10 @@
 
 section {
   @include outer-container;
+   float: right;
+   display: block;
+   margin-right: 150px;
+   margin-top: 130px;
 }
 
 li{
@@ -27,6 +31,7 @@ li{
   padding: 0;
   margin-top: 0;
   border-radius: 3px;
+  position: relative;
 
 img{
   height: 170px;
@@ -34,7 +39,8 @@ img{
   margin: 0 auto;
   display: block;
   border-radius: 1px;
-  position: relative;
+
+  z-index: 1;
 }
 }
 
@@ -73,4 +79,39 @@ p{
 
 li:hover{
   box-shadow: 0 0 1em #888888;
+}
+
+img:hover{
+  opacity: .5;
+
+}
+.hover{
+  visibility: hidden;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0;
+}
+
+.sidebar{
+  float:left;
+  width: 224px;
+  height: 1130px;
+  background-color: white;
+  border-radius: 5px;
+  display: block;
+  margin: 0;
+  clear: right;
+  margin-left: 145px;
+  margin-top: 132px;
+  margin-right: 0px;
+}
+
+.box1{
+  /* display: none; */
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }

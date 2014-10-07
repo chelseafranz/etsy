@@ -1,6 +1,9 @@
 var count = $('#drink'),
-  title, price, currency_code, image, shop_name;
+  title, price, currency_code, image, shop_name, box;
 var glass;
+
+
+
 
 whiskey.results.forEach( function (item) {
 
@@ -14,10 +17,13 @@ shop_name = "<p class='sn'>" + item.Shop.shop_name + "</p>";
 
 image = "<img src='" + item.Images[0].url_170x135 + "' />";
 
-glass="<li>" + image+ title + shop_name +  currency_code + price +"</li>";
+box = "<img class='box1' src='" + 'https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/hamburger.png' + "' />";
+
+
+glass="<li>" + image + title + shop_name +  currency_code + price +box +"</li>";
 
 
 count.append(glass);
-$( "item.title" ).addClass( "one" );
+
 
 });
