@@ -4,19 +4,20 @@ var glass;
 
 whiskey.results.forEach( function (item) {
 
-title = "<p>" + item.title + "</p>";
+title = "<p class='t'>" + item.title + "</p>";
 
-price = "<p>" + item.price + "</p>";
+price = "<p class='p'>" + item.price + "</p>";
 
-currency_code = "<p>" + item.currency_code + "</p>";
+currency_code = "<p class='cc'>" + item.currency_code + "</p>";
 
-shop_name = "<p>" + item.Shop.shop_name + "</p>";
+shop_name = "<p class='sn'>" + item.Shop.shop_name + "</p>";
 
 image = "<img src='" + item.Images[0].url_170x135 + "' />";
 
-glass="<li>" + title + price + currency_code + shop_name + image + "</li>";
+glass="<li>" + image+ title + shop_name +  currency_code + price +"</li>";
 
 
 count.append(glass);
+$( "item.title" ).addClass( "one" );
 
 });
