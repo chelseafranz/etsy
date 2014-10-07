@@ -3,6 +3,46 @@
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
 // Custom Styles
+header{
+  background-color: white;
+  height: 80px;
+  width: 100%;
+}
+.etsy{
+  font-family: 'Times New Roman';
+  color:HSLA(17, 68%, 49%, 1);
+  font-size: 35px;
+  display: inline-block;
+  width: 150px;
+}
+form{
+  display: inline-block;
+  border-radius: 5px;
+}
+input{
+  border-radius: 3px;
+  font-size: .9em;
+}
+
+input.input{
+  height: 34px;
+  width: 260px;
+  margin-right: 0;
+  padding: 0;
+}
+
+input.button{
+  background-color: HSLA(194, 52%, 58%, 1);
+  color: white;
+  font-family:'Arial';
+  font-size: .7em;
+  width: 82px;
+  height:34px;
+  margin-left: -5px;
+  padding: 0;
+
+}
+
  body {
   background: #F5F5F1;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -81,10 +121,7 @@ li:hover{
   box-shadow: 0 0 1em #888888;
 }
 
-img:hover{
-  opacity: .5;
 
-}
 .hover{
   visibility: hidden;
   width: 50px;
@@ -114,10 +151,10 @@ img:hover{
       position:absolute;
       background-color:gray;
       display:none;
-      border-radius:5px;
+      border-radius:2px;
+      opacity: .5;
 
-    }
-
+}
     .box2{
       height:25px;
       width:25px;
@@ -126,12 +163,10 @@ img:hover{
       position:absolute;
       background-color:gray;
       display:none;
-      border-radius:5px;
-
+      border-radius:2px;
+      opacity: .5;
     }
 
-
-
-&.showButtons .box, &.showButtons .box2 {
-    display: block;
-  }
+    li.showButtons .box, li.showButtons .box2 {
+        display: block;
+    }
