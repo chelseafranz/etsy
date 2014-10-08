@@ -13,29 +13,66 @@
 
     <script src="scripts/vendor/modernizr.js"></script>
   </head>
-  <body>
+  <body class="count">
+    <header>
+      <div class="etsy">
+        Etsy
+      </div>
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Normalize CSS</li>
+        <form>
+          <input class="input" type="text" placeholder="Search for items or shops" required>
+          <input class="button" type="button" value="Search">
+        </form>
 
-        <li>Sass</li>
+    </header>
+    <aside class="sidebar">
+      <div class="itemType">Item Type</div>
+      <div class="itemtypebuttons">
+        <div class="button1">
+  <input type="radio" class="radio" name="radios" value="all" checked>
+     <label for="radio1">All Items</label>
+        </div>
+        <div class="button2">
+  <input type="radio" class="radio" name="radios"value="false">
+     <label for="radio2">Handmade</label>
+   </div>
+   <div class="button3">
+  <input type="radio" class="radio" name="radios" value="true">
+     <label for="radio3">Vintage</label>
+   </div>
+   <div class="button4">
+  <input type="radio" class="radio" name="radios" value="all" checked>
+     <label for="radio4">Craft Supplies</label>
+</div>
+</div>
+
+<hr> </hr>
+<div class="categories">Categories
+  <div class="categoriesList"></div>
+  <div class="categoriesList"></div>
+  <div class="categoriesList"></div>
+  <div class="categoriesList"></div>
+  <div class="categoriesList"></div>
+  <div class="categoriesList"></div>
+</div>
+    </aside>
+    <div class="sideresults">Show results for:</div>
+  <div class="results">
+    "whiskey" We found 18,207 items!
+  </div>
+<section>
 
 
-        <li>Modernizr</li>
+  <ul id="drink"></ul>
 
-
-        <li>Bourbon & Neat</li>
-
-
-        <li>UnderscoreJS</li>
-
-      </ul>
-      <p>Don't forget to update your readme file!!</p>
+</section>
+  <footer>
+    <div class="related">
+      Related to whiskey
+      <div class="relatedList">whiskey decanter bourbon scotch</div>
     </div>
+    <span class="shops">Looking for shops?</span><span class="looking"> whiskeynweddingbells, whiskeydarling, WhiskeyDogWares, See more.</span>
+  </footer>
 
     <script src="scripts/vendor.js"></script>
 
