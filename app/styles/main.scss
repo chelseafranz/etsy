@@ -3,6 +3,14 @@
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
 // Custom Styles
+$gray: HSLA(0, 0%, 40%, 1);
+@mixin font{
+  font-size: .9em;
+  color:HSLA(0, 0%, 40%, 1);
+  display: inline-block;
+}
+
+
 header{
   background-color: white;
   height: 80px;
@@ -13,15 +21,20 @@ header{
   color:HSLA(17, 68%, 49%, 1);
   font-size: 35px;
   display: inline-block;
-  width: 150px;
+  width: 80px;
+  margin-left: 150px;
+  margin-top: 25px;
+
 }
 form{
   display: inline-block;
   border-radius: 5px;
+  margin-left: -20px;
 }
 input{
   border-radius: 3px;
   font-size: .9em;
+  margin-left: 19px;
 }
 
 input.input{
@@ -43,6 +56,54 @@ input.button{
 
 }
 
+.results{
+  @include font;
+  width: 250px;
+  margin-top:45px;
+  margin-right: 50px;
+}
+.sideresults{
+  @include font;
+  margin-left: -230px;
+  margin-right: 185px;
+  font-weight: bold;
+}
+
+.itemType{
+  @include font;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+
+input.radio{
+  width: 10px;
+  margin: 0;
+  display: inline-block;
+
+}
+.itemtypebuttons{
+  margin-left: 10px;
+}
+.radio{
+  width: 69px;
+margin-left: 12px;
+margin-right: 2px;
+display: block;
+}
+
+.categories{
+@include font;
+}
+
+hr{
+  width: 180px;
+}
+
+
  body {
   background: #F5F5F1;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -55,7 +116,8 @@ section {
    float: right;
    display: block;
    margin-right: 150px;
-   margin-top: 130px;
+   margin-top: 0;
+
 }
 
 li{
@@ -140,33 +202,59 @@ li:hover{
   margin: 0;
   clear: right;
   margin-left: 145px;
-  margin-top: 132px;
+  margin-top: 80px;
   margin-right: 0px;
 }
     .box{
-      height:25px;
-      width:25px;
+      height:20px;
+      width:20px;
       top:5px;
       right:10px;
       position:absolute;
-      background-color:gray;
+      background-color:white;
       display:none;
       border-radius:2px;
-      opacity: .5;
+
 
 }
     .box2{
-      height:25px;
-      width:25px;
+      height:20px;
+      width:20px;
       top:5px;
       right:40px;
       position:absolute;
-      background-color:gray;
+      background-color:white;
       display:none;
       border-radius:2px;
-      opacity: .5;
     }
 
     li.showButtons .box, li.showButtons .box2 {
         display: block;
     }
+
+
+
+footer{
+  height:597px;
+  width: 100%;
+
+  clear: both;
+  text-align: center;
+  font-size: .9em;
+
+  .related{
+  display: block;
+  width: 400px;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 35px;
+  color: black;
+  }
+
+  .relatedList{
+    color: HSLA(192, 99%, 36%, 1);
+  }
+}
+.looking{
+  color: HSLA(192, 99%, 36%, 1);
+}
