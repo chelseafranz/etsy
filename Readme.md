@@ -1,3 +1,7 @@
-## Yo, I'm a Readme
+## Etsy Search Results
 
-You should probably update me so people looking at your code have an idea what it is being used for :)
+Recreated an Etsy search results page with live data from Etsy's API. 
+
+Libraries used: 
+jQuery
+Underscore
